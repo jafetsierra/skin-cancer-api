@@ -15,7 +15,7 @@ allowed_formats = ['jpg','jpeg','png']
 
 @app.get('/')
 def home():
-    return 'Hi'
+    return 'Skin-cancer-diagnosis with vgg19.  To use the api send the post request to /predict'
 
 @app.post("/predict",response_model=PredictionSchema)
 def predict(file: UploadFile = File(...)):

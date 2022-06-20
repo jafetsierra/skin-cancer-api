@@ -1,9 +1,8 @@
 import numpy as np
 import tensorflow as tf
 from tensorflow.keras.applications.vgg19 import preprocess_input
-from tensorflow.keras.preprocessing.image import img_to_array
+#from tensorflow.keras.preprocessing.image import img_to_array
 from tensorflow.keras.models import load_model
-from tensorflow.keras.utils import load_img 
 from PIL import Image
 
 model = load_model('./model/SkinCancer_model_v5.h5')
